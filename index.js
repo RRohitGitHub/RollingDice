@@ -19,6 +19,8 @@ const reset = document.getElementById("resetBtn");
 document.getElementById("rollBtn").addEventListener("click",function(){
     const random = Math.floor(Math.random()*6) + 1;
     if(player1Turn){
+        player1Score+=random;
+        player1Scoreboard.textContent = player1Score;
         player1Dice.textContent = random;
         player1Turn = false;
         player1Dice.classList.remove("active")
@@ -27,6 +29,8 @@ document.getElementById("rollBtn").addEventListener("click",function(){
         
     }
     else{
+        player2Score+=random;
+        player2Scoreboard.textContent = player2Score;
         player2Dice.textContent = random;
         player1Turn = true;
         player2Dice.classList.remove("active")
