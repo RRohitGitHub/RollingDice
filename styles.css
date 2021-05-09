@@ -56,6 +56,8 @@ button {
 
 #rollBtn {
     background-color: var(--color-5);
+    margin-left:auto;
+    margin-right: auto;
 }
 
 #resetBtn {
@@ -68,6 +70,8 @@ button:focus {
 
 #resetBtn {
     display: none;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .active {
